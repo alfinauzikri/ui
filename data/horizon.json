@@ -1,0 +1,18 @@
+{
+    "title": "Horizon UI",
+    "description": "The Trendiest & Innovative Open Source Admin Template for Chakra UI & React.",
+    "tags": [
+        "React",
+        "Components",
+        "Tailwind CSS"
+    ],
+    "stargazers_count": 444,
+    "thumbnail": "horizon.png",
+    "frameworks": [
+        {
+            "name": "React",
+            "demo": "https://horizon-ui.com/horizon-tailwind-react",
+            "repo": "horizon-ui/horizon-tailwind-react"
+        }
+    ]
+}

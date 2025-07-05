@@ -1,0 +1,18 @@
+{
+    "title": "AdminLTE",
+    "description": "Free admin dashboard template based on Bootstrap 5.",
+    "tags": [
+        "HTML",
+        "Dashboard",
+        "Bootstrap"
+    ],
+    "stargazers_count": 44817,
+    "thumbnail": "adminlte.png",
+    "frameworks": [
+        {
+            "name": "HTML",
+            "demo": "https://adminlte.io/themes/v3/",
+            "repo": "ColorlibHQ/AdminLTE"
+        }
+    ]
+}

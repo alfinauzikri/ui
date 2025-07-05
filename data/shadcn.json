@@ -1,0 +1,18 @@
+{
+    "title": "Shadcn UI",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+    "tags": [
+        "React",
+        "Components",
+        "Tailwind CSS"
+    ],
+    "stargazers_count": 90128,
+    "thumbnail": "shadcn.png",
+    "frameworks": [
+        {
+            "name": "React",
+            "demo": "https://ui.shadcn.com",
+            "repo": "shadcn-ui/ui"
+        }
+    ]
+}
