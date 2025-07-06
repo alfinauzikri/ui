@@ -4,6 +4,11 @@ import { Button } from '@/components/ui/button';
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { ExternalLink } from 'lucide-react';
 import React from 'react';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 import {
   Dialog,
@@ -117,14 +122,21 @@ export function UIEntryCard({ data }: Props) {
           <h2 className="text-sm font-semibold">Available on:</h2>
           <div className="flex gap-2">
             {data.frameworks.map((framework, i) => (
-              <Button
-                key={i}
-                size="sm"
-                variant={activeTab === i ? 'default' : 'ghost'}
-                onClick={() => setActiveTab(i)}
-              >
-                {framework.name}
-              </Button>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Button
+                    key={i}
+                    size="sm"
+                    variant={activeTab === i ? 'default' : 'ghost'}
+                    onClick={() => setActiveTab(i)}
+                  >
+                    {framework.name}
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Switch to {framework.name} version</p>
+                </TooltipContent>
+              </Tooltip>
             ))}
           </div>
         </div>

@@ -19,9 +19,9 @@ export function ContributeSection() {
                         <Button
                             variant="secondary"
                             size="lg"
-                            className="bg-white w-full md:w-auto">
+                            className="w-full md:w-auto">
                             <a target="_blank" rel="noopener noreferrer" className="flex items-center" href="https://github.com/alfinauzikri/ui">
-                                <Icons.github className="mr-2" />
+                                <Icons.github className="mr-2 fill-current" />
                                 Contribute on GitHub
                             </a>
                         </Button>

@@ -6,13 +6,16 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { UIEntrySection } from '@/components/UIEntrySection'
 import { ContributeSection } from '@/components/ContributeSection'
+import { ThemeProvider } from '@/providers/ThemeProvider'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Navigation />
-    <HeroSection />
-    <UIEntrySection />
-    <ContributeSection />
-    <Footer />
+    <ThemeProvider>
+      <Navigation />
+      <HeroSection />
+      <UIEntrySection />
+      <ContributeSection />
+      <Footer />
+    </ThemeProvider>
   </StrictMode>,
 )
