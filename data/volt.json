@@ -1,0 +1,23 @@
+{
+    "title": "Volt",
+    "description": "Free and open source Bootstrap 5 Admin Dashboard Template with vanilla Javascript.",
+    "tags": [
+        "HTML",
+        "Dashboard",
+        "Bootstrap"
+    ],
+    "stargazers_count": 2664,
+    "thumbnail": "volt.png",
+    "frameworks": [
+        {
+            "name": "HTML",
+            "demo": "https://demo.themesberg.com/volt/pages/dashboard/dashboard.html",
+            "repo": "themesberg/volt-bootstrap-5-dashboard"
+        },
+        {
+            "name": "React",
+            "demo": "https://demo.themesberg.com/volt-react-dashboard/#/dashboard/overview",
+            "repo": "themesberg/volt-react-dashboard"
+        }
+    ]
+}

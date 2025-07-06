@@ -1,0 +1,18 @@
+{
+    "title": "Tabler UI",
+    "description": "Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap.",
+    "tags": [
+        "HTML",
+        "Dashboard",
+        "Bootstrap"
+    ],
+    "stargazers_count": 39670,
+    "thumbnail": "tabler.png",
+    "frameworks": [
+        {
+            "name": "HTML",
+            "demo": "https://preview.tabler.io/",
+            "repo": "tabler/tabler"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "title": "Chakra UI",
+    "description": "Chakra UI is a component system for building SaaS products with speed.",
+    "tags": [
+        "React",
+        "Components",
+        "Chakra UI"
+    ],
+    "stargazers_count": 39318,
+    "thumbnail": "chakra.png",
+    "frameworks": [
+        {
+            "name": "React",
+            "demo": "https://chakra-ui.com",
+            "repo": "chakra-ui/chakra-ui"
+        }
+    ]
+}
