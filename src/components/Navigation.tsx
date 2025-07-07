@@ -11,19 +11,17 @@ import {
 function GitHubStarsButton({ stars }: { stars: number | null }) {
     return (
         <Tooltip>
-            <TooltipTrigger>
-                <Button asChild variant="ghost">
-                    <a
-                        href="https://github.com/alfinauzikri/ui"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Icons.github className="fill-current" />
-                        <span className="text-sm font-semibold">
-                            {stars !== null ? stars : "0"}
-                        </span>
-                    </a>
-                </Button>
+            <TooltipTrigger asChild>
+                <a
+                    href="https://github.com/alfinauzikri/ui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button variant="ghost" className="flex items-center gap-1.5">
+                        <Icons.github className="w-4 h-4 fill-current" />
+                        <span className="text-sm font-semibold">{stars ?? "0"}</span>
+                    </Button>
+                </a>
             </TooltipTrigger>
             <TooltipContent>
                 <p>Star on GitHub</p>
@@ -38,14 +36,7 @@ function HeaderRight({ stars }: { stars: number | null }) {
         <div className="flex items-center gap-1">
             <GitHubStarsButton stars={stars} />
             <div className="w-px h-5 bg-border" />
-            <Tooltip>
-                <TooltipTrigger>
-                    <ThemeToggle />
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>Toggle theme</p>
-                </TooltipContent>
-            </Tooltip>
+            <ThemeToggle />
         </div>
     );
 }
@@ -78,7 +69,7 @@ export function Navigation() {
                 <HeaderRight stars={starCount} />
             </div>
 
-            <div className="container-wrapper md:hidden flex items-center justify-between mx-auto py-6">
+            <div className="container-wrapper md:hidden flex items-center justify-between mx-auto py-5">
                 <LogoLink />
                 <HeaderRight stars={starCount} />
             </div>
