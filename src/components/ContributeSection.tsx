@@ -12,7 +12,7 @@ export function ContributeSection() {
                             <h1 className="text-2xl font-semibold text-primary-foreground">
                                 Contribute to the Project
                             </h1>
-                            <p className="mt-2 text-muted leading-relaxed max-w-4xl">
+                            <p className="mt-2 text-muted leading-relaxed text-pretty md:max-w-4xl">
                                 This project is open-source and welcomes contributions from the community. Whether it's fixing bugs, adding new features, or improving documentation, your help is greatly appreciated!
                             </p>
                         </div>

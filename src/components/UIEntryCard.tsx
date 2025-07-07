@@ -66,7 +66,14 @@ export function UIEntryCard({ data }: Props) {
                   <h1 className="text-xl font-semibold group-hover:underline transition">{data.title}</h1>
                   {typeof data.stargazers_count === 'number' && (
                     <span className="text-sm text-muted-foreground font-medium">
-                      {formatStarCount(data.stargazers_count)} stars
+                      <Tooltip>
+                        <TooltipTrigger>
+                          {formatStarCount(data.stargazers_count)} stars
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          {data.stargazers_count.toLocaleString()} stars on GitHub
+                        </TooltipContent>
+                      </Tooltip>
                     </span>
                   )}
                 </div>
@@ -101,7 +108,7 @@ export function UIEntryCard({ data }: Props) {
             <DialogTitle className="text-2xl font-semibold">{data.title}</DialogTitle>
             {typeof data.stargazers_count === 'number' && (
               <span className="text-sm text-muted-foreground font-medium">
-                {formatStarCount(data.stargazers_count)} stars
+                {data.stargazers_count.toLocaleString()} stars
               </span>
             )}
           </div>
@@ -122,21 +129,14 @@ export function UIEntryCard({ data }: Props) {
           <h2 className="text-sm font-semibold">Available on:</h2>
           <div className="flex gap-2">
             {data.frameworks.map((framework, i) => (
-              <Tooltip>
-                <TooltipTrigger>
-                  <Button
-                    key={i}
-                    size="sm"
-                    variant={activeTab === i ? 'default' : 'ghost'}
-                    onClick={() => setActiveTab(i)}
-                  >
-                    {framework.name}
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Switch to {framework.name} version</p>
-                </TooltipContent>
-              </Tooltip>
+              <Button
+                key={i}
+                size="sm"
+                variant={activeTab === i ? 'default' : 'ghost'}
+                onClick={() => setActiveTab(i)}
+              >
+                {framework.name}
+              </Button>
             ))}
           </div>
         </div>
