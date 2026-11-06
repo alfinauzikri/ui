@@ -1,18 +1,30 @@
 {
     "title": "AdminKit",
-    "description": "Free and open-source Bootstrap 5 admin dashboard template with light and dark mode, built with plain HTML, Sass and JavaScript.",
+    "description": "Free and open-source Bootstrap 5 admin dashboard template with light and dark mode, in HTML, React and Next.js versions.",
     "tags": [
         "HTML",
+        "React",
+        "Next.js",
         "Dashboard",
         "Bootstrap"
     ],
-    "stargazers_count": 1659,
+    "stargazers_count": 1660,
     "thumbnail": "adminkit.png",
     "frameworks": [
         {
             "name": "HTML",
             "demo": "https://demo.adminkit.io/",
             "repo": "adminkit/adminkit"
+        },
+        {
+            "name": "React",
+            "demo": "https://react-demo.adminkit.io/",
+            "repo": "adminkit/adminkit-react"
+        },
+        {
+            "name": "Next.js",
+            "demo": "https://nextjs-demo.adminkit.io/",
+            "repo": "adminkit/adminkit-nextjs"
         }
     ]
 }
